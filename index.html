@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddarth | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #1d44c4;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #5c046d;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #1eec17;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 60px 50px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin-top: 15px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #38bdf8;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      background: #334155;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      background: #334155;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      margin-top: 40px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Siddarth</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Siddarth 👋</h2>
+    <p>3rd Year B.Tech Computer Science Student passionate about Web Development, Data Structures, and Problem Solving.</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align:center; max-width:800px; margin:auto; color:#cbd5e1;">
+      I am a Computer Science student currently in my 3rd year of B.Tech. 
+      I enjoy building responsive websites, solving coding problems, and learning new technologies. 
+      I am actively working on improving my skills in full-stack development and competitive programming.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">C Programming</div>
+      <div class="skill-card">C++</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Data Structures & Algorithms</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>Developed using Java and MySQL to manage student records with CRUD operations.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal responsive portfolio built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>To-Do List App</h3>
+        <p>A simple task management app built using JavaScript with local storage support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p style="text-align:center; color:#cbd5e1;">
+      Email: gajjalasiddarth@email.com <br>
+      LinkedIn: linkedin.com/in/siddarth <br>
+      GitHub: github.com/gajjalasiddarth
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Siddarth | All Rights Reserved
+  </footer>
+
+</body>
+</html>
